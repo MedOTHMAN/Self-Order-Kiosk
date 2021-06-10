@@ -5,15 +5,15 @@ import Logo from '../components/Logo';
 import {useStyles} from '../styles'
 
 
-export default function HomeScreen() {
+export default function HomeScreen(props) {
     const styles = useStyles();
 
     return (
         <Card>
-            <CardActionArea>
+            <CardActionArea onClick ={() => props.history.push('/choose')}>
                 <Box className={[styles.root, styles.red]}>
                     <Box className={[styles.main, styles.center]}>
-                        <Typography component="h6" variant="h6">
+                        <Typography component="h1" variant="h6">
                             Fast & Easy
                         </Typography>
                         <Typography component="h1" variant="h1">

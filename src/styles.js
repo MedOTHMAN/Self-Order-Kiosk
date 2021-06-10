@@ -6,6 +6,9 @@ export const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
     },
+    navy: {
+        backgroundColor: '#003080',
+    },
     red:{
         backgroundColor: 'red',
         color: '#ffffff',
@@ -29,5 +32,22 @@ export const useStyles = makeStyles((theme) => ({
     
     largeLogo: {
         height: 100,
+    },
+    bord: {
+        border: "3px solid black",
+    },
+    cards: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    card:{
+        margin: 10
+    },
+    space:{
+        padding: 10
+    },
+    media:{
+        width:200
     },
 }))
